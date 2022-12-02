@@ -39,9 +39,6 @@ export class TienThuongComponent implements OnInit {
         this.hesothuong = 0.8;
         break;
     }
-  }
-
-  public tinhtien(){
     this.tienthuong = this.luong * this.hesothuong;
   }
 

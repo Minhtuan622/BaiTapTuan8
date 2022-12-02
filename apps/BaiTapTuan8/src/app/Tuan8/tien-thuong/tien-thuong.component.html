@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td>Tiền lương</td>
-    <td><input type="number"></td>
+    <td><input type="number" [(ngModel)]="luong"></td>
   </tr>
   <tr>
     <td>
@@ -14,7 +14,7 @@
     </td>
   </tr>
   <tr>
-    <button class="btn btn-primary" (click)="tinhtien()">Tính</button>
+    <button class="btn btn-primary" (click)="chonLoai($event)">Tính</button>
   </tr>
   <tr>Tiền thưởng là: {{this.tienthuong}}</tr>
 </table>
