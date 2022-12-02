@@ -1,1 +1,14 @@
-<p>danh-sach-kh works!</p>
+<table>
+  <tr>
+    <th>Mã khách hàng</th>
+    <th>Tên khách hàng</th>
+    <th>Giới tính</th>
+    <th>Số điện thoại</th>
+  </tr>
+  <tr *ngFor="let kh of Customerlist">
+    <td>{{kh.makh}}</td>
+    <td>{{kh.tenkh}}</td>
+    <td>{{kh.phai}}</td>
+    <td>{{kh.dienthoai}}</td>
+  </tr>
+</table>
