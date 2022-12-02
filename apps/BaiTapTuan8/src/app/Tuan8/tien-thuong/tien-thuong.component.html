@@ -5,19 +5,16 @@
   </tr>
   <tr>
     <td>
-      <label for="xl">Xếp loại</label>
+      <label>Xếp loại</label>
     </td>
     <td>
-      <select name="xeploai" id="xl">
-        <option value="A">Loại A</option>
-        <option value="B">Loại B</option>
-        <option value="C">Loại C</option>
-        <option value="D">Loại D</option>
+      <select name="xeploai" (change)="chonLoai($event)">
+        <option *ngFor="let l of loai" value="{{l.id}}">{{l.name}}</option>
       </select>
     </td>
   </tr>
   <tr>
-    <button type="submit">Tính</button>
+    <button class="btn btn-primary" (click)="tinhtien()">Tính</button>
   </tr>
-  <tr>Tiền thưởng là: </tr>
+  <tr>Tiền thưởng là: {{this.tienthuong}}</tr>
 </table>
