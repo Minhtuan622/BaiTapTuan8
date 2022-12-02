@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <td>Điểm trung bình học kỳ 1</td>
+    <td>
+      <input type="number" name="hk1" [(ngModel)]="hk1">
+    </td>
+  </tr>
+  <tr>
+    <td>Điểm trung bình học kỳ 2</td>
+    <td>
+      <input type="number" name="hk2" [(ngModel)]="hk2">
+    </td>
+  </tr>
+  <tr>
+    <td>Điểm trung bình cả năm</td>
+    <td>
+      <input type="number" name="cn" value="{{this.cn}}">
+    </td>
+  </tr>
+  <tr>
+    <td>Xếp loại</td>
+    <td>{{this.xl}}</td>
+  </tr>
+  <tr>
+    <button type="submit" (click)="xeploai()">Xuất xếp loại</button>
+  </tr>
+</table>

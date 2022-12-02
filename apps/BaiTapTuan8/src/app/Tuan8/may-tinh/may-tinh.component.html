@@ -1,0 +1,29 @@
+<form class="form-control">
+  <div class="mb-3">
+    <label class="form-label" for="so1">Nhập số thứ nhất</label>
+    <input class="form-control" id="so1" [(ngModel)]="so1" name="so1">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label class="form-label" for="so2">Nhập số thứ hai</label>
+    <input class="form-control" id="so2" [(ngModel)]="so2" name="so2">
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="pheptoan" value="+" [(ngModel)]="pt" checked>
+    <label>Cộng</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="pheptoan" value="-" [(ngModel)]="pt" >
+    <label>Trừ</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="pheptoan" value="*" [(ngModel)]="pt" >
+    <label>Nhân</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="pheptoan" value="/" [(ngModel)]="pt" >
+    <label>Chia</label>
+  </div>
+  <button class="btn btn-primary" type="button" (click)="tinh()">Thực hiện</button>
+  <span class="float-end" [class]="kq!=''? 'ketqua': ''">{{kq}}</span>
+</form>
